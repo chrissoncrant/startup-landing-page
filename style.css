@@ -1,5 +1,78 @@
-.col {
-    border: 2px solid green;
-    background-color: greenyellow;
-    margin: 2px;
+@import url('https://fonts.googleapis.com/css2?family=Montaga&family=Montserrat:wght@100;400;700&display=swap');
+
+:root {
+    --black: #170318;
+    --white: #ffffff;
+    --grey: #8d858c;
+    --dk-red: #c0296d;
+    --pink: #e436b3;
+    --lt-purple: #9a77a7;
+    --purple: #633cb1;
+    --dk-blue: #21267e;
+    --lt-blue: #67a8c0;
+    --aqua: #55d9a6;
+    --yellow: #e8da43;
+    --lt-green: #88d648;
+    --md-green: #4aa457;
+    --dk-green: #367a28;
+
+    --sans: 'Montserrat', sans-serif;
+    --serif: 'Montaga', serif;
+}
+
+html {
+    box-sizing: border-box;
+    width: 100%;
+    height: 100%;
+    background-color: black;
+}
+
+body {
+    margin: 0;
+    min-height: 100vh;
+    font-family: var(--sans);
+    background: url(images/laptop.jpg) no-repeat center center;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+     -o-background-size: cover;
+    background-size: cover;
+    color: var(--white);
+    text-align: center;
+    border: 3px rgba(255, 166, 0, 0) solid;
+}
+
+h1 {
+    font-weight: bold; 
+}
+
+hr.my-hr {
+    max-width: 75%;
+    margin: 25px auto;
+    border: 2px solid var(--lt-purple);
+    opacity: 1;
+}
+
+.container {
+    height: 50vh;
+    margin-top: 5vh;
+    /* border: 3px orange solid; */
+    padding: 10vh;
+}
+
+.btn-primary {
+    background-color: var(--lt-purple);
+    border: 1px solid var(--purple);
+    border-radius: 30px; 
+    text-transform: uppercase; 
+    transition: border 0.3s ease-in;
+}
+
+.btn-primary:hover {
+    background-color: var(--purple);
+    border: 4px solid var(--lt-purple);
+
+}
+
+.btn-xl {
+    padding: 1rem 2rem
 }
