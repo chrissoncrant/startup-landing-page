@@ -25,6 +25,7 @@ html {
     width: 100%;
     height: 100%;
     background-color: black;
+    font-size: 18px;
 }
 
 body {
@@ -45,18 +46,37 @@ h1 {
     font-weight: bold; 
 }
 
+img {
+    width: 100%;
+    height: auto;
+}
+
 hr.my-hr {
     max-width: 75%;
-    margin: 25px auto;
-    border: 2px solid var(--lt-purple);
+    width: 500px;
+    margin: 20px auto;
+    border: 1px solid var(--lt-purple);
     opacity: 1;
 }
 
 .container {
     height: 50vh;
-    margin-top: 5vh;
     /* border: 3px orange solid; */
-    padding: 10vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.logo-container {
+    width: 200px;
+    margin-bottom: 20px;
+}
+
+.btn-container {
+    height: 4em;
+    display: flex;
+    align-items: center;
 }
 
 .btn-primary {
@@ -74,5 +94,22 @@ hr.my-hr {
 }
 
 .btn-xl {
-    padding: 1rem 2rem
+    padding: 0.5rem 1.5rem;
 }
+
+@media only screen and (max-width: 1000px) {
+    html {
+        font-size: 16px;
+    }
+    
+    body {
+        -webkit-background-size: 150%;
+        -moz-background-size: 150%;
+        -o-background-size: 150%;
+        background-size: 150%;
+    }
+
+    .logo-container {
+        width: 140px;
+    }
+} 
